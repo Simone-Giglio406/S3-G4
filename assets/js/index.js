@@ -3,7 +3,7 @@ for (i = 0; i < 76; i++) {
 }
 
 const createTable = function () {
-  const rows = [];
+  const rows = [i];
   console.log("rows", rows);
 
   for (let i = 0; i <= 76; i++) {
@@ -19,8 +19,8 @@ const createTable = function () {
     }
   }
 
-  tabella.innerHTML = `<thead><tr><th>Numbers</th></tr></thead><tbody>${rows}</tbody>`;
+  rows.innerHTML = `<thead><tr><th>Numbers</th></tr></thead><tbody>${rows}</tbody>`;
   console.log("verify");
 };
 
-createTable();
+createTable("rows");
