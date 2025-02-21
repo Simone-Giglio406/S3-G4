@@ -8,11 +8,11 @@ const createTable = function () {
 
   for (let i = 0; i <= 76; i++) {
     if (i % 8 === 1) {
-      rows += "<tr>";
+      rows = "<tr>";
       console.log("error");
     }
 
-    rows += `<td>${i}</td>`;
+    rows = `<td>${i}</td>`;
 
     if (i % 8 === 0) {
       rows += "</tr>";
